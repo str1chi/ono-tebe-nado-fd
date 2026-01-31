@@ -1,17 +1,29 @@
 @font-face {
-  font-family: Raleway;
-  src:
-    url(./Raleway-Regular.woff2) format('woff2'),
-    url(./Raleway-Regular.woff) format('woff');
-  font-weight: normal;
+  font-family: 'Raleway';
+  src: 
+    url(./ralewayregular.woff2) format('woff2'),
+    url(./ralewayregular.woff) format('woff'),
+    url(./eralewayregular.ttf) format('truetype');
+  font-weight: 400;
   font-display: swap;
 }
 
 @font-face {
-  font-family: Raleway;
+  font-family: 'Raleway';
   src:
-    url(./Raleway-Bold.woff2) format('woff2'),
-    url(./Raleway-Bold.woff) format('woff');
-  font-weight: bold;
+    url(./ralewaybold.woff2) format('woff2'),
+    url(./ralewaybold.woff) format('woff'),
+    url(./ralewaybold.ttf) format('truetype');
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: 
+    url(./ralewaymedium.woff2) format('woff2'),
+    url(./ralewaymedium.woff) format('woff'),
+    url(./ralewaymedium.ttf) format('truetype');
+  font-weight: 500;
   font-display: swap;
 }
