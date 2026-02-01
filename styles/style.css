@@ -1,19 +1,10 @@
-body {
-  font-family: "Raleway", sans-serif;
-  font-weight: 400;
-}
-
+/* ↓↓ header ↓↓ */
 .header {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   padding: 0 50px;
   align-items: center;
 }
-
-/* ↓↓ меню ↓↓ */
-/*.header__menu {
- /// неиспользуемый класс?
-}*/
 
 .header__links-list {
   display: flex;
@@ -28,7 +19,6 @@ body {
 }
 
 .header__link {
-  
   display: inline-block;
 }
 
@@ -40,7 +30,6 @@ body {
   text-decoration: none;
 }
 
-/* ↓↓ лого ↓↓ */
 .header__logo {
   justify-self: center;
 }
@@ -50,7 +39,7 @@ body {
   height: 105px;
   margin-top: 92px;
   margin-bottom: 96px;
-1}
+}
 
 /* ↓↓ адрес шапка ↓↓ */
 .address {
@@ -58,7 +47,6 @@ body {
   width: 100%;
   max-width: 240px;
   line-height: 24.3px;
-  text-underline-offset: 4px;
 }
 
 .header .address {
@@ -116,6 +104,7 @@ body {
 
 .aligned-text_center {
   text-align: center;
+  margin: 20px 0 20px 35px;
 }
 
 .aligned-text_right {
@@ -130,7 +119,7 @@ body {
   font-size: 22px;
   font-weight: 400;
   text-transform: uppercase;
-  word-spacing: 15px;
+  word-spacing: 20px;
   line-height: 28px;
 }
 
@@ -149,14 +138,6 @@ body {
   text-transform: uppercase;
 }
 
-.overlay {
-  position: absolute;
-  z-index: -1;
-  inset: 0;
-  background-color: #000;
-  opacity: 60%;
-}
-
 /* ↓↓ лоты ↓↓ */
 .lots {
   z-index: 1;
@@ -169,6 +150,7 @@ body {
 .lots__heading {
   color: #000;
   text-transform: uppercase;
+  font-size: 40px;
   font-weight: 700;
   padding-left: 40px;
   padding-bottom: 27px;
@@ -176,6 +158,7 @@ body {
 
 .lots__card-list {
   display: flex;
+    flex-wrap: wrap;
   gap: 25px;
 }
 
@@ -207,12 +190,15 @@ body {
   flex-direction: column;
   font-size: 20px;
   line-height: 1.2;
-  align-content: end;
 }
 
-/* article a { /// на что влияет?
+.card__text-bottom {
+  display: block;
+}
+
+article, a { 
   max-height: 100%;
-} */
+} 
 
 .card_type_film {
   z-index: 0;
@@ -245,6 +231,7 @@ body {
 .about {
   display: grid;
   grid-template-columns: 334px 1fr;
+  column-gap: 25px;
   padding: 120px 24px 180px;
   color: #000;
 }
@@ -263,7 +250,6 @@ body {
   background-position: center;
   background-color: #000;
   border-radius: 100%;
-  margin-right: 60px;
   justify-content: center;
   align-items: center;
 }
@@ -280,13 +266,16 @@ body {
   text-transform: uppercase;
 }
 
-.about__text {
+.about__text-block {
   padding-top: 100px;
   justify-content: space-between;
   display: flex;
   flex-direction: column;
   gap: 24px;
-  size: 20px;
+}
+
+.about__text {
+  font-size: 20px;
   line-height: 24px;
 }
 
@@ -296,10 +285,6 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
   margin-top: 180px;
   padding: 0 50px 82px 50px;
-}
-
-.footer__address {
-  text-underline-offset: 4px;
 }
 
 .footer .address {
@@ -331,7 +316,6 @@ body {
   text-decoration: none;
 }
 
-/* ↓↓ соц сети ↓↓ */
 .footer__social-list {
   display: flex;
   justify-content: end;
@@ -344,4 +328,12 @@ body {
 
 .footer__social-icon {
   width: 48px;
+}
+
+.overlay {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background-color: #000;
+  opacity: 60%;
 }
