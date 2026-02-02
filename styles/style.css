@@ -23,12 +23,12 @@
   display: inline-block;
 }
 
-.header__links-list-item_no-bullit,
-.footer__links-list-item_no-bullit {
+.header__links-list-item_no-bullit {
   list-style-type: none;
 }
 
-.header__link_active .header__link {
+.header__link_active,
+.footer__link_active {
   text-decoration: none;
 }
 
@@ -45,6 +45,7 @@
 
 /* ↓↓ адрес шапка ↓↓ */
 .address {
+  font-style: normal;
   font-size: 18px;
   width: 100%;
   max-width: 240px;
@@ -62,7 +63,7 @@
 .header__address {
   display: grid;
   align-items: center;
-  justify-self: end;
+  justify-self: start;
 }
 
 /* ↓↓ cover ↓↓ */
@@ -161,6 +162,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 25px;
+  list-style: none;
 }
 
 .lots__card-list-item {
@@ -184,8 +186,8 @@
   font-weight: 700;
   font-size: 22px;
   line-height: 1.2;
-  text-decoration: underline;
   text-transform: uppercase;
+  text-decoration: underline;
   align-content: start;
 }
 
@@ -198,6 +200,9 @@
 
 .card__text-bottom {
   display: block;
+}
+.card-link {
+    text-decoration: none;
 }
 
 .card_type_film {
@@ -230,20 +235,14 @@
 }
 
 .about__column {
-  padding-top: 35px;
-  padding-left: 47px;
-}
-
-.about__logo {
-  display: flex;
+    display: flex;
   width: 240px;
   height: 240px;
-  background-size: 148px 114px;
   background-repeat: no-repeat;
   background-position: center;
   background-color: #000;
   border-radius: 100%;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 }
 
@@ -299,10 +298,6 @@
 
 .footer__link {
   display: inline;
-}
-
-.footer__link_active .footer__link {
-  text-decoration: none;
 }
 
 .footer__social-list {
