@@ -9,10 +9,10 @@
 
 .header__links-list {
   display: flex;
-  gap: 40px;
+  gap: 35px;
   white-space: nowrap;
-  margin-right: 36px;
   font-size: 18px;
+  align-self: center;
 }
 
 .header__links-list-item {
