@@ -230,20 +230,20 @@
   display: grid;
   grid-template-columns: 334px 1fr;
   column-gap: 25px;
-  padding: 155px 24px 0 71px;
+  margin: 120px 24px 0 24px;
   color: #000;
 }
 
 .about__column {
-  display: flex;
   width: 240px;
   height: 240px;
-  background-repeat: no-repeat;
-  background-position: start;
   background-color: #000;
-  border-radius: 100%;
-  justify-content: space-evenly;
+  border-radius: 50%;
+  margin-top: 35px;
+  margin-left: 47px;
+  display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .about__logo-image {
