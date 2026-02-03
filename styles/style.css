@@ -56,11 +56,11 @@
   justify-self: end;
 }
 
-.adress__link {
+.address__link_no-bullit {
   text-decoration: none;
 }
 
-.header__address {
+.address__link {
   display: grid;
   align-items: center;
   justify-self: start;
@@ -230,16 +230,16 @@
   display: grid;
   grid-template-columns: 334px 1fr;
   column-gap: 25px;
-  padding: 120px 24px 0 24px;
+  padding: 155px 24px 0 71px;
   color: #000;
 }
 
 .about__column {
-    display: flex;
+  display: flex;
   width: 240px;
   height: 240px;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: start;
   background-color: #000;
   border-radius: 100%;
   justify-content: space-evenly;
